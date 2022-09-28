@@ -61,6 +61,7 @@ form {
     to{margin-left: 0%;}
 }
 .nav-parent {
+    width: auto;
     list-style-type: none;
     text-align: center; 
     padding: 0;
@@ -124,4 +125,55 @@ td{
 }
 .ulist li:nth-child(even){
     background-color: gray;
+}
+@media (max-width: 600px){
+    img{
+        height: 350px;
+        width: 350px;
+        padding: 5px;
+        border: 2px solid blueviolet;
+        background-color: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .b1{
+    display: block;
+    grid-auto-rows: minmax(350px, auto);
+    }
+    .b1-child1{
+        grid-row: 1/1;
+    }
+    .b1-child2{
+    
+        grid-row: 2/2;
+    }
+    .b1-child3{
+    
+        grid-row: 3/2;
+    }
+    .b1-child4{
+        grid-row: 4/4;
+    }
+    video{
+        height: 350px;
+        width: 350px;
+        padding: 5px;
+        border: 2px solid blueviolet;
+        background-color: black;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    form {
+        height: 300px;
+        width: 350px;
+        border-style: groove;
+        border-color: black;
+        border-width: 5px;
+        border-radius: 5px;
+        padding: 10px;
+    
+        animation: myForm 3s;
+    }
 }
